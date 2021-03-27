@@ -1,20 +1,14 @@
+import Sidebar from '../components/mainPageComponents/Sidebar';
+import CategoryDetail from '../components/mainPageComponents/CategoryDetail';
+import Recipes from '../components/mainPageComponents/Recipes';
+
 function MainPage() {
   return (
     <div className="main-page">
-      
-      <aside className="sidebar">
-        Category Sidebar
-      </aside>
-
+      <Sidebar />
       <main className="category-info">
-        
-        <section className="category-detail">
-          Category Details
-        </section>
-
-        <section className="recipes-section">
-          Recipes Section
-        </section>
+        <CategoryDetail />
+        <Recipes />
       </main>
     </div>
   );
