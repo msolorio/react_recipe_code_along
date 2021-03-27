@@ -1,6 +1,6 @@
 import Sidebar from '../components/mainPageComponents/Sidebar';
 import CategoryDetail from '../components/mainPageComponents/CategoryDetail';
-import Recipes from '../components/mainPageComponents/Recipes';
+import RecipesList from '../components/mainPageComponents/RecipesList';
 
 function MainPage() {
   return (
@@ -8,7 +8,7 @@ function MainPage() {
       <Sidebar />
       <main className="category-info">
         <CategoryDetail />
-        <Recipes />
+        <RecipesList />
       </main>
     </div>
   );
