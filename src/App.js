@@ -1,14 +1,18 @@
-import Header from './components/Header';
-import HomePage from './pages/HomePage';
-import MainPage from './pages/MainPage';
+// import Header from './components/Header';
+// import HomePage from './pages/HomePage';
+// import MainPage from './pages/MainPage';
+import Person from './components/Person';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Person personName="Greta" favColor="purple" />
+      <Person personName="Hubert" favColor="lime green" />
+      <Person personName="Roberta" favColor="orange" />
+      {/* <Header /> */}
       {/* <HomePage /> */}
-      <MainPage />
+      {/* <MainPage /> */}
     </div>
   );
 }

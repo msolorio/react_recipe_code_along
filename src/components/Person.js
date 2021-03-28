@@ -1,8 +1,10 @@
-function Person() {
+function Person(props) {
+  console.log('props inside Person =>', props);
+
   return (
     <div>
-      <h2>Name: Flynn</h2>
-      <p>Favorite Color: Blue</p>
+      <h2>Name: {props.personName}</h2>
+      <p>Favorite Color: {props.favColor}</p>
     </div>
   );
 }
