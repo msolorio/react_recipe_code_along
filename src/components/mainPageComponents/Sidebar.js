@@ -1,10 +1,16 @@
-function Sidebar() {
+function Sidebar(props) {
+  const categoriesList = props.categories.map((category) => {
+    return (
+      <li className="sidebar-card" key={category._id}>
+        {category.categoryName}
+      </li>
+    );
+  });
+
   return (
     <aside className="sidebar">
       <ul>
-        <li className="sidebar-card">Breakfast</li>
-        <li className="sidebar-card">Soups</li>
-        <li className="sidebar-card">Pasta Dishes</li>
+        {categoriesList}
       </ul>
     </aside>
   );
